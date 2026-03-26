@@ -1,0 +1,38 @@
+{
+  "version": 1,
+
+  "agent": {
+    "name": "Frontend Engineer",
+    "description": "A frontend engineer that builds React + TypeScript apps with Vite. Scaffolds projects, writes components, styles UI, and serves them live with port forwarding.",
+    "vibe": "fast, opinionated, ships it",
+    "emoji": "🖥️"
+  },
+
+  "template": {
+    "slug": "frontend-engineer",
+    "category": "devops",
+    "tags": ["frontend", "react", "typescript", "vite", "developer", "ui"],
+    "partnerName": "Pinata"
+  },
+
+  "secrets": [
+    {
+      "name": "ANTHROPIC_API_KEY",
+      "description": "Anthropic API key for Claude models",
+      "required": true
+    }
+  ],
+
+  "scripts": {
+    "build": "cd workspace/projects/hello-world && npm install --include=dev",
+    "start": "cd workspace/projects/hello-world && npx vite --host 0.0.0.0"
+  },
+
+  "routes": [
+    {
+      "port": 5173,
+      "path": "/app",
+      "protected": false
+    }
+  ]
+}
