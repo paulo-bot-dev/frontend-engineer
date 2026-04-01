@@ -9,10 +9,6 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     allowedHosts: ['__AGENT_HOST__'],
-    hmr: {
-      host: '__AGENT_HOST__',
-      protocol: 'wss',
-      clientPort: 443,
-    },
+    hmr: false,
   },
 })
