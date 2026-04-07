@@ -8,7 +8,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-    allowedHosts: ['__AGENT_HOST__'],
+    strictPort: true,
+    allowedHosts: true,
     hmr: false,
   },
 })
