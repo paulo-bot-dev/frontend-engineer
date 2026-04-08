@@ -16,15 +16,7 @@
     "partnerName": "Pinata"
   },
 
-  "secrets": [
-    {
-      "name": "ANTHROPIC_API_KEY",
-      "description": "Anthropic API key for Claude models",
-      "required": true
-    }
-  ],
-
-  "skills": [
+"skills": [
     {
       "slug": "react-performance"
     }
