@@ -31,8 +31,8 @@
   ],
 
   "scripts": {
-    "build": "cd workspace/projects/hello-world && npm install --include=dev",
-    "start": "cd workspace/projects/hello-world && npx vite --host 0.0.0.0 --port 5173"
+    "build": "cd workspace/projects/react-app && npm install --include=dev",
+    "start": "cd workspace/projects/react-app && npx vite --host 0.0.0.0 --port 5173"
   },
 
   "routes": [

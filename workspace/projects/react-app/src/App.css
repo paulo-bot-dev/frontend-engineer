@@ -1,0 +1,93 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-brand {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--text-h);
+  font-size: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+.nav-links a.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+main {
+  flex: 1;
+  padding: 32px 24px;
+}
+
+.page h1 {
+  margin: 0 0 12px;
+}
+
+.page p {
+  margin: 0 0 24px;
+}
+
+.card {
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.card h2,
+.card h3 {
+  font-size: 16px;
+  color: var(--text-h);
+  margin: 0 0 8px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.stat {
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.stat.ok {
+  color: #22c55e;
+}

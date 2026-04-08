@@ -4,18 +4,19 @@ A frontend engineer agent that builds React + TypeScript apps with Vite and serv
 
 ## What You Get
 
-- **React + TypeScript + Vite** — ships with a hello-world starter project ready to go
+- **React 19 + TypeScript + Vite + React Router** — ships with a working starter app at `/app`
 - **Live preview** — port 5173 forwarded so you can see what the agent builds in your browser
+- **ClawHub skills** — includes `react-performance` for frontend performance guidance
 - **Bootstrap flow** — on first run, the agent gets to know you and your preferences
 - **Memory system** — daily logs + curated long-term memory across sessions
 
 ## Structure
 
 ```
-manifest.json                # Agent config, routes, scripts
+manifest.json                # Agent config, routes, scripts, skills
 workspace/
   projects/
-    hello-world/             # Vite + React + TS starter project
+    react-app/               # Vite + React 19 + TS + React Router starter
   BOOTSTRAP.md               # First-run conversation guide
   SOUL.md                    # Agent personality and engineering principles
   AGENTS.md                  # Workspace conventions, memory system, safety rules
@@ -27,4 +28,6 @@ workspace/
 
 ## Usage
 
-Import this repo when creating an agent on [Pinata Agents](https://agents.pinata.cloud). On boot, the agent installs deps (`scripts.build`) and starts the Vite dev server (`scripts.start`) with HMR on port 5173, accessible at `/app`.
+Import this repo when creating an agent on [Pinata Agents](https://agents.pinata.cloud). On boot, the agent installs deps (`scripts.build`) and starts the Vite dev server (`scripts.start`) on port 5173, accessible at `/app`.
+
+The starter app includes React Router with client-side navigation (Home + Dashboard routes) and is pre-configured for Pinata's reverse proxy (correct `base` path, host binding, and port settings).
