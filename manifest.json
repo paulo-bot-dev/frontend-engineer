@@ -13,12 +13,13 @@
     "slug": "frontend-engineer",
     "category": "devops",
     "tags": ["frontend", "react", "typescript", "vite", "developer", "ui"],
-    "partnerName": "Pinata"
+    "partnerName": "Pinata",
+    "authorName": "Pinata"
   },
 
 "skills": [
     {
-      "slug": "react-performance"
+      "clawhub_slug": "react-performance"
     }
   ],
 
